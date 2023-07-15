@@ -1,0 +1,41 @@
+{
+	"name": "C++",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"containerUser": "myuser",
+	"hostRequirements": {
+		"cpus": 4
+	},
+	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+	"containerEnv": {
+		"CC": "clang",
+		"CXX": "clang++",
+		"MPI_CC": "clang",
+		"MPI_CXX": "clang++"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"tdennis4496.cmantic",
+				"llvm-vs-code-extensions.vscode-clangd",
+				"xaver.clang-format",
+				"ms-vscode.cpptools",
+				"twxs.cmake",
+				"vadimcn.vscode-lldb",
+				"ms-vscode.cmake-tools",
+				"codezombiech.gitignore",
+				"eamodio.gitlens",
+				"ajshort.include-autocomplete",
+				"oderwat.indent-rainbow",
+				"DavidAnson.vscode-markdownlint"
+			],
+			"settings": {
+				"C_Cpp.intelliSenseEngine": "disabled",
+				"cmake.configureOnOpen": false,
+				"cmake.configureOnEdit": false,
+				"files.autoSave": "afterDelay"
+			}
+		}
+	}
+}

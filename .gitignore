@@ -37,4 +37,5 @@
 .cache/
 
 build/
+builddir/
 out/
