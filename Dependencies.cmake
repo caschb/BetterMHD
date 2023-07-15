@@ -32,4 +32,8 @@ function(bmhd_setup_dependencies)
     cpmaddpackage("gh:CLIUtils/CLI11@2.3.2")
   endif()
 
+  if(NOT TARGET Eigen3::Eigen)
+    cpmaddpackage("gl:libeigen/eigen#3.4.0")
+  endif()
+
 endfunction()

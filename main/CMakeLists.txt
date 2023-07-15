@@ -13,6 +13,7 @@ target_link_system_libraries(
   CLI11::CLI11
   fmt::fmt
   spdlog::spdlog
+  Eigen3::Eigen
 )
 
 target_include_directories(${EXECUTABLE_NAME} PRIVATE include)
