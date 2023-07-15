@@ -34,7 +34,9 @@
 				"C_Cpp.intelliSenseEngine": "disabled",
 				"cmake.configureOnOpen": false,
 				"cmake.configureOnEdit": false,
-				"files.autoSave": "afterDelay"
+				"files.autoSave": "onFocusChange",
+				"editor.formatOnSave": true,
+				"editor.defaultFormatter": "xaver.clang-format"
 			}
 		}
 	}
